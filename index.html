@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React based application</title>
+  </head>
+  <body>
+    <div id="react-app"></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script>
+      const element = React.createElement(
+        "div",
+        { style: { fontFamily: "poppins" } },
+        React.createElement(
+          "h1",
+          { style: { fontWeight: "400", paddingLeft: "15px" } },
+          "Topics covered"
+        ),
+        React.createElement(
+          "p",
+          { style: { paddingLeft: "10px" } },
+          "The following is the list of all the topics covered in MDN learning area."
+        ),
+
+        React.createElement(
+          "div",
+          { style: { paddingLeft: "10px" } },
+          React.createElement(
+            "a",
+            { href: "#" },
+            "Getting started with the web."
+          ),
+          React.createElement(
+            "p",
+            { style: { paddingLeft: "15px" } },
+            "Provides a practical implementation to web develop ",
+            "."
+          )
+        ),
+        React.createElement(
+          "div",
+          { style: { paddingLeft: "10px" } },
+          React.createElement("a", { href: "#" }, "HTML-Structuring the web."),
+          React.createElement(
+            "p",
+            { style: { padding: "15px" } },
+            "HTML is the language that we use to structure the different parts of our content and define what their meaning or purpose is. This topic teaches HTML in details",
+            "."
+          )
+        ),
+        React.createElement(
+          "div",
+          { style: { padding: "10px" } },
+          React.createElement("a", { href: "#" }, "CSS- Styling the web."),
+          React.createElement(
+            "p",
+            { style: { paddingLeft: "15px" } },
+            "CSS is the language  that we use to control our web content's style and layout, as well as  adding behavior like animation. This topic provides comprehensive coverage of CSS"
+          )
+        )
+      );
+      ReactDOM.render(element, document.getElementById("react-app"));
+    </script>
+  </body>
+</html>
